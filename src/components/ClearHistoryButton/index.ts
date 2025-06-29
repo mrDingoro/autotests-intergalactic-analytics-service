@@ -1,0 +1,1 @@
+export { ClearHistoryButton } from './ClearHistoryButton';

@@ -1,0 +1,12 @@
+.root {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    padding: 6px;
+    background-color: var(--color-accent-purple);
+    line-height: 90%;
+}

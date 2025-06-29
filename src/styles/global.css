@@ -1,0 +1,66 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-background);
+
+    --color-black: #201b10;
+    --color-white: #ffffff;
+    --color-background: #fce2ff;
+
+    --color-accent-purple: #cb81ff;
+    --color-accent-green: #2ae881;
+    --color-accent-gray: #c0c0c0;
+    --color-accent-yellow: #fce300;
+    --color-accent-orange: #ff5f00;
+
+    --color-primary-purple: #eacdff;
+    --color-primary-green: #d4fae6;
+    --color-primary-gray: #787878;
+    --color-primary-error: #c51e1e;
+
+    --color-state-active-bg: #e0f2f1;
+    --color-state-active-border: #4db6ac;
+    --color-state-reject-bg: #ffebee;
+    --color-state-reject-border: #ef5350;
+
+    --color-black-transparent: rgba(6, 6, 6, 0.3);
+
+    --z-index-modal: 2;
+
+    --border-radius-xs: 10px;
+    --border-radius-s: 20px;
+    --border-radius-m: 25px;
+    --border-radius-l: 30px;
+    --border-radius-xl: 40px;
+    --border-radius-xxl: 45px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}

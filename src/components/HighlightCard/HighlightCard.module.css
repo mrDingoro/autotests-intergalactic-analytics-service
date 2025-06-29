@@ -1,0 +1,10 @@
+.highlightCard {
+    background-color: white;
+    height: 118px;
+    border-radius: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

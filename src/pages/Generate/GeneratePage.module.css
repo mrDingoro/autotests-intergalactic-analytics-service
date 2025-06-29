@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.generateButton {
+    width: 400px;
+}
+
+.isGenerating {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+.fileControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fileName {
+    font-size: 33px;
+    background-color: #cb81ff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.fileNameCompleted {
+    background-color: #d4fae6;
+    color: var(--color-black);
+}
+
+.clearFileButton.customBorder {
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}

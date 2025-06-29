@@ -1,0 +1,11 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding: 40px;
+    margin: 0 auto;
+    width: 100%;
+}

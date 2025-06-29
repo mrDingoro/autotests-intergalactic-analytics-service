@@ -1,0 +1,43 @@
+.root {
+    display: flex;
+    gap: 40px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: var(--border-radius-xl);
+    background-color: var(--color-accent-purple);
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 87px;
+    height: 87px;
+    min-width: 87px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-s);
+    color: var(--color-accent-orange);
+}
+
+.fileName {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 350px;
+    color: var(--color-black);
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.disabled {
+    pointer-events: none;
+}

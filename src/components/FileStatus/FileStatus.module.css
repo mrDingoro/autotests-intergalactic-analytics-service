@@ -1,0 +1,11 @@
+.root {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity: 0.5;
+    color: var(--color-black);
+}
+
+.active {
+    opacity: 1;
+}

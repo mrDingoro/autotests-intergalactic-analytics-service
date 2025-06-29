@@ -1,0 +1,16 @@
+.root {
+    width: 1000px;
+    height: 790px;
+    overflow: scroll;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hightlightCard {
+    width: 100%;
+    background-color: var(--color-primary-purple);
+}

@@ -1,0 +1,22 @@
+.root {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.root::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color-black);
+    transition: width 0.3s ease;
+    border-radius: var(--border-radius-l);
+}
+
+.active::after {
+    width: 100%;
+}
