@@ -74,21 +74,9 @@ export const isCsvFile = (file: File): boolean => {
  * @param rawData - Сырые данные от сервера
  * @returns true, если ответ валидный, иначе false
  */
-export const validateServerResponse = (rawData: Record<string, string | number>) => {
+export const validateServerResponse = (rawData: Record<string, string | number>): boolean => {
     const validHighlightKeys = Object.keys(HIGHLIGHT_TITLES);
     const responseHighlightKeys = Object.keys(rawData);
 
-    // Проверяем, что в ответе есть хотя бы один ожидаемый ключ
-    const hasValidKeys = validHighlightKeys.some((key) => responseHighlightKeys.includes(key));
-    if (!hasValidKeys) {
-        return false;
-    }
-
-    // Проверяем, что нет null значений в полях ответа
-    const hasNullValues = Object.values(rawData).some((value) => value === null);
-    if (hasNullValues) {
-        throw new InvalidServerResponseError('Ответ сервера содержит некорректные данные (null значения)');
-    }
-
-    return true;
+    return validHighlightKeys.some((key) => responseHighlightKeys.includes(key));
 };

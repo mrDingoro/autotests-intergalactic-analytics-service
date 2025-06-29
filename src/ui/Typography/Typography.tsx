@@ -24,6 +24,7 @@ export const Typography = ({
     children,
     maxRowsNumber,
     className,
+    ...rest
 }: Props) => {
     const lineClampStyle = maxRowsNumber
         ? {
@@ -42,6 +43,7 @@ export const Typography = ({
                 { [styles.withLineClamp]: Boolean(maxRowsNumber) }
             )}
             style={{ ...lineClampStyle }}
+            {...rest}
         >
             {children}
         </Component>

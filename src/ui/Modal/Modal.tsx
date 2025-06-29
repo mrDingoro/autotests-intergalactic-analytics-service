@@ -31,10 +31,11 @@ export const Modal: FC<Props> = ({ isOpen, children, onClose }) => {
                     [styles.backdropShown]: isOpen,
                 })}
                 onClick={handleBackdropClick}
+                data-testid={isOpen ? 'modal-backdrop' : undefined}
             >
                 <div className={styles.modal} onClick={handleModalClick}>
                     {onClose && (
-                        <Button variant="clear" className={styles.closeButton} onClick={onClose}>
+                        <Button variant="clear" data-testid="modal-close-button" className={styles.closeButton} onClick={onClose}>
                             <Cross size={32} />
                         </Button>
                     )}

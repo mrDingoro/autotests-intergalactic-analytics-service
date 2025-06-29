@@ -82,6 +82,7 @@ export const GeneratePage = () => {
                 variant="primary"
                 disabled={isGenerating}
                 onClick={handleGenerate}
+                data-testid="generate-button"
                 className={cn(styles.generateButton, {
                     [styles.isGenerating]: isGenerating,
                 })}

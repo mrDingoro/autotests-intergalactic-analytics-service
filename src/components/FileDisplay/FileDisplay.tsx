@@ -27,6 +27,7 @@ export const FileDisplay: FC<Props> = ({ fileName, onClear, isCompleted, isProce
                 </Typography>
             </div>
             <Button
+                data-testid="clear-file-button"
                 type="button"
                 variant="clear"
                 className={cn(styles.clearFileButton, styles.customBorder)}

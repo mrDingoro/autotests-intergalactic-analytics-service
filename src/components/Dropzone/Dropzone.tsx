@@ -171,13 +171,14 @@ export const Dropzone: FC<Props> = ({ file, status, error, onFileSelect, onClear
             onDrop={handleDrop}
             onClick={handleZoneClick}
             role="button"
+            data-testid="dropzone"
             tabIndex={0}
         >
             <input type="file" accept=".csv" ref={inputRef} onChange={handleInputChange} hidden />
 
             {renderContent()}
 
-            <Typography size="l">{renderStatusText()}</Typography>
+            <Typography size="l" data-testid="dropzone-status">{renderStatusText()}</Typography>
         </div>
     );
 };

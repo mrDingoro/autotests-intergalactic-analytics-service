@@ -42,6 +42,7 @@ export const HistoryItem: FC<Props> = ({ item, onClick, onDelete }) => {
             <Button
                 type="button"
                 variant="secondary"
+                data-testid={`open-button-${id}`}
                 className={cn(styles.item, { [styles.disabled]: !hasHighlights })}
                 aria-label={`Открыть хайлайты для ${fileName}`}
                 onClick={handleItemClick}
@@ -57,6 +58,7 @@ export const HistoryItem: FC<Props> = ({ item, onClick, onDelete }) => {
             <Button
                 type="button"
                 variant="clear"
+                data-testid={`delete-button-${id}`}
                 className={styles.deleteButton}
                 aria-label={`Удалить файл ${fileName}`}
                 onClick={handleDeleteButtonClick}
